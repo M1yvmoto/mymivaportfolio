@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic Portfolio and Student Management Hub for Fashola Lateef A.K. - COS 106 Project">
+    <title>Fashola Lateef A.K. | Academic Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="header-logo">
+                Fashola Lateef <span class="logo-dot"></span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" id="mobile-toggle-btn">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active" id="nav-home">Home</a></li>
+                    <li><a href="about.html" id="nav-about">About Me</a></li>
+                    <li><a href="projects.html" id="nav-projects">Projects</a></li>
+                    <li><a href="planner.html" id="nav-planner">Academic Planner</a></li>
+                    <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="hero-section">
+            <div class="container">
+                <div class="grid-2">
+                    <!-- Hero Text Content -->
+                    <div class="hero-content">
+                        <span class="hero-subtitle">Academic Portfolio</span>
+                        <h1 class="hero-title">Fashola Lateef A.K.</h1>
+                        <p class="hero-description">
+                            Software Engineering student at MIVA Open University, transitioning from town planning into software engineering. I build scalable, data-driven systems bridging the physical and digital worlds.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="about.html" class="btn btn-primary" id="btn-explore-about">About Me</a>
+                            <a href="planner.html" class="btn btn-secondary" id="btn-open-planner">Academic Planner</a>
+                        </div>
+                    </div>
+
+                    <!-- Profile Avatar Card -->
+                    <div class="profile-card-container">
+                        <div class="glass-card profile-card" id="profile-card-element">
+                            <div class="profile-img-container">
+                                <img src="assets/profile.jpg" alt="Fashola Lateef A.K." class="profile-img" id="profile-pic">
+                            </div>
+                            <h2 class="profile-name">Fashola Lateef A.K.</h2>
+                            <p class="profile-title">Software Engineering Student</p>
+                            <p class="text-secondary" style="text-align: center; font-size: 0.9rem; max-width: 320px; line-height: 1.5;">
+                                Leveraging urban infrastructure foundations to write clean, high-performance spatial code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biography & Multimedia Section -->
+        <section id="biography-section" style="padding-top: 0;">
+            <div class="container">
+                <div class="grid-2">
+                    <!-- Biography Card -->
+                    <div class="glass-card bio-card" id="bio-card-element">
+                        <h2 class="bio-title">Professional Background</h2>
+                        <p class="text-secondary" style="margin-bottom: 1.2rem;">
+                            As a trained Town Planner transitioning into Software Engineering, I leverage a deep foundation in urban infrastructure, spatial systems, and policy frameworks to build scalable, data-driven software.
+                        </p>
+                        <p class="text-secondary">
+                            I aspire to bridge the gap between physical environments and digital innovation by developing high-performance spatial analytics and Civic Tech solutions that optimize urban systems and improve community lives.
+                        </p>
+                    </div>
+
+                    <!-- Welcome Video & Audio Player Showcase (Multimedia Requirement) -->
+                    <div class="glass-card welcome-media" id="media-card-element">
+                        <h2 class="bio-title" style="margin-bottom: 1.5rem;">Multimedia Showcase</h2>
+                        
+                        <!-- Video Player -->
+                        <div class="media-player-container">
+                            <video id="welcome-video-player" controls poster="assets/project1.png">
+                                <source src="Starlite Prime Equipment Ltd _ Heavy Equipment Rentals, Sales & Project Solutions - Google Chrome 2026-07-18 14-38-00.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p class="media-caption">Video: Demonstration of software development and environment setup.</p>
+                        
+                        <!-- Audio Player -->
+                        <div style="margin-top: 1.5rem;">
+                            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">Welcome Message</h3>
+                            <audio id="welcome-audio-player" controls>
+                                <source src="assets/welcome.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p class="media-caption">Audio: Voice introduction and portfolio welcoming.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <ul class="social-links">
+                <li>
+                    <a href="https://github.com/M1yvmoto" target="_blank" class="flex-center" title="GitHub" id="social-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:klafashola@gmail.com" class="flex-center" title="Email" id="social-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">&copy; 2026 Fashola Lateef A.K. All Rights Reserved. MIVA Open University Term Project.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

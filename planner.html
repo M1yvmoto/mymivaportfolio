@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Academic Task Planner for Fashola Lateef A.K. - Manage exams, assignments, study tasks, and projects.">
+    <title>Academic Planner | Fashola Lateef A.K.</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="header-logo">
+                Fashola Lateef <span class="logo-dot"></span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" id="mobile-toggle-btn">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <nav id="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" id="nav-home">Home</a></li>
+                    <li><a href="about.html" id="nav-about">About Me</a></li>
+                    <li><a href="projects.html" id="nav-projects">Projects</a></li>
+                    <li><a href="planner.html" class="active" id="nav-planner">Academic Planner</a></li>
+                    <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section style="padding-bottom: 2rem;">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Academic Planner</h1>
+                    <p class="section-subtitle">Track your coursework, exams, study routines, and academic milestones in real-time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planner Interactive Layout -->
+        <section style="padding-top: 0;">
+            <div class="container">
+                <div class="planner-grid">
+                    
+                    <!-- Task Add Form Form Panel -->
+                    <div class="glass-card planner-form-card" id="planner-form-card-element">
+                        <h2 style="font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 700;">Add New Task</h2>
+                        <form id="planner-form">
+                            <!-- Task Name -->
+                            <div class="form-group">
+                                <label for="task-input">Task Description</label>
+                                <input type="text" id="task-input" class="form-control" placeholder="Study for Database Systems..." required autocomplete="off">
+                            </div>
+                            
+                            <!-- Category Selection -->
+                            <div class="form-group">
+                                <label for="task-category">Category</label>
+                                <select id="task-category" class="form-control">
+                                    <option value="assignment">Assignment</option>
+                                    <option value="study">Study Session</option>
+                                    <option value="exam">Exam Preparation</option>
+                                    <option value="project">Coding Project</option>
+                                </select>
+                            </div>
+
+                            <!-- Deadline Date -->
+                            <div class="form-group">
+                                <label for="task-deadline">Deadline Date</label>
+                                <input type="date" id="task-deadline" class="form-control" required>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;" id="add-task-btn">Add to Calendar</button>
+                        </form>
+                    </div>
+
+                    <!-- Interactive Task Lists Display Area -->
+                    <div class="planner-tasks-wrapper">
+                        
+                        <!-- List 1: Pending Tasks -->
+                        <div class="tasks-section" id="pending-tasks-section">
+                            <h3 class="tasks-section-title">
+                                Pending Tasks
+                                <span class="task-count" id="pending-count">0</span>
+                            </h3>
+                            <div class="tasks-list" id="pending-list">
+                                <!-- Appended dynamically via JS -->
+                            </div>
+                        </div>
+
+                        <!-- List 2: Completed Tasks -->
+                        <div class="tasks-section" id="completed-tasks-section">
+                            <h3 class="tasks-section-title" style="border-bottom-color: rgba(16, 185, 129, 0.2);">
+                                Completed Tasks
+                                <span class="task-count" id="completed-count" style="background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald);">0</span>
+                            </h3>
+                            <div class="tasks-list" id="completed-list">
+                                <!-- Appended dynamically via JS -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <ul class="social-links">
+                <li>
+                    <a href="https://github.com/M1yvmoto" target="_blank" class="flex-center" title="GitHub" id="social-github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:klafashola@gmail.com" class="flex-center" title="Email" id="social-email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">&copy; 2026 Fashola Lateef A.K. All Rights Reserved. MIVA Open University Term Project.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/planner.js"></script>
+</body>
+</html>
