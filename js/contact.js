@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 3. Validate Phone Number
             const phoneValue = phoneInput.value.trim();
-            const phoneRegex = /^\d+$/; // Contains only digits
+            const phoneRegex = /^\d{7,15}$/; // Contains only digits, between 7 and 15 characters
             if (phoneValue === '') {
                 showError(phoneInput, 'Phone number is required.');
                 isValid = false;
             } else if (!phoneRegex.test(phoneValue)) {
-                showError(phoneInput, 'Phone number must contain only digits (no spaces, dashes, or symbols).');
+                showError(phoneInput, 'Phone number must contain only digits and be between 7 and 15 characters long.');
                 isValid = false;
             } else {
                 showSuccess(phoneInput);
